@@ -7,6 +7,8 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 // Typing Animation
 import Typing from "react-typing-animation";
+// Wave Animation
+import Wave from "react-wavify";
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
             <h1
               style={{
                 color: "#B1ADAD",
-                marginTop: "20px",
+                marginTop: "25px",
                 fontFamily: "Sansita Swashed cursive",
                 userSelect: "none",
               }}
@@ -37,7 +39,7 @@ function App() {
       {/* title & subtitle of the company  */}
       <div className="row d-flex h-50">
         <div className="col d-flex flex-column justify-content-center align-items-center">
-          <Typing speed={50}>
+          <Typing speed={60}>
             <h1
               style={{
                 userSelect: "none",
@@ -50,8 +52,8 @@ function App() {
           </Typing>
 
           <Typing speed={10}>
-            <h4 style={{ userSelect: "none", color: "#B1ADAD" }}>
-              For all your software needs
+            <h4 style={{ fontSize: 15, userSelect: "none", color: "#B1ADAD" }}>
+              <i> For all your software needs</i>
             </h4>
           </Typing>
         </div>
@@ -63,18 +65,27 @@ function App() {
         <div className="col-xs-6 col-lg-4 col-md-6 col-sm-6 d-flex justify-content-between">
           <FacebookIcon
             className="d-flex justify-content-between hover-animation"
-            style={{ fontSize: 50, color: "#526D13" }}
+            style={{ fontSize: 50, color: "#B1ADAD" }}
           />
           <InstagramIcon
             className="d-flex justify-content-between  hover-animation"
-            style={{ fontSize: 50, color: "#526D13" }}
+            style={{ fontSize: 50, color: "#B1ADAD" }}
           />
           <TwitterIcon
             className="d-flex justify-content-between hover-animation"
-            style={{ fontSize: 50, color: "#526D13" }}
+            style={{ fontSize: 50, color: "#B1ADAD", backgroundColor: "none" }}
           />
         </div>
         <div className="col-xs-3 col-lg-4 col-md-3 col-sm-3"></div>
+        <Wave
+          fill="#292A28"
+          paused={false}
+          options={{
+            amplitude: 20,
+            speed: 0.15,
+            points: 3,
+          }}
+        />
       </div>
     </div>
   );
