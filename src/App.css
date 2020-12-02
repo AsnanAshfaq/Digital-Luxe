@@ -11,3 +11,9 @@
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 1000000px inset;
 }
+.hover-animation:hover {
+  transform: scale(1.5);
+  transition: ease-out 0.5s;
+  font-size: 60;
+  cursor: pointer;
+}
