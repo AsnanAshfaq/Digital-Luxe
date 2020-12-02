@@ -62,7 +62,7 @@ function App() {
       <div className="row h-25 d-flex">
         {/* blank space  */}
         <div className="col-xs-3 col-lg-4 col-md-3 col-sm-3"></div>
-        <div className="col-xs-6 col-lg-4 col-md-6 col-sm-6 d-flex justify-content-between">
+        <div className="col-xs-6 col-lg-4 col-md-6 col-sm-6 d-flex justify-content-between mb-4">
           <FacebookIcon
             className="d-flex justify-content-between hover-animation"
             style={{ fontSize: 50, color: "#B1ADAD" }}
@@ -77,13 +77,15 @@ function App() {
           />
         </div>
         <div className="col-xs-3 col-lg-4 col-md-3 col-sm-3"></div>
+
         <Wave
           fill="#292A28"
           paused={false}
           options={{
+            height: 10,
             amplitude: 20,
-            speed: 0.15,
-            points: 3,
+            speed: 0.25,
+            points: 4,
           }}
         />
       </div>
